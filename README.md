@@ -174,26 +174,6 @@ python main.py
 
 ---
 
-## 📸 Screenshots
-
-### Home Page
-
-Add screenshot here:
-
-```text
-assets/home.png
-```
-
-### Generated Post
-
-Add screenshot here:
-
-```text
-assets/output.png
-```
-
----
-
 ## 🛠️ Tech Stack
 
 | Technology | Usage |
