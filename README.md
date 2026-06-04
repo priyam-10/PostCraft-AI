@@ -1,207 +1,217 @@
-# 🚀 PostCraft AI
+# 🪄 PostCraft-AI
 
-> Generate engaging, professional, and high-performing LinkedIn posts in seconds using AI.
+> Generate professional, engaging, and audience-focused LinkedIn posts using Google Gemini AI.
 
-PostCraft AI helps creators, founders, marketers, and professionals transform ideas into polished LinkedIn content with customizable writing styles and AI-powered suggestions.
-
-![GitHub stars](https://img.shields.io/github/stars/priyam-10/PostCraft-AI?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/priyam-10/PostCraft-AI?style=for-the-badge)
-![License](https://img.shields.io/github/license/priyam-10/PostCraft-AI?style=for-the-badge)
-
----
-
-## 🔗 Quick Links
-
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Architecture](#-architecture)
-- [Quick Start](#-quick-start)
-- [Usage](#-usage)
-- [Roadmap](#-roadmap)
-- [Contributing](#-contributing)
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![Gemini AI](https://img.shields.io/badge/Google-Gemini_AI-4285F4?logo=google&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-## 🎯 Why PostCraft AI?
+## 🚀 Overview
 
-Writing consistent and engaging LinkedIn content can be challenging.
+PostCraft-AI is an AI-powered LinkedIn content generation platform built with **Python**, **Streamlit**, and **Google Gemini AI**.
 
-PostCraft AI helps you:
+The application helps creators, professionals, founders, marketers, recruiters, and students generate high-quality LinkedIn posts in seconds using proven copywriting frameworks, audience targeting, and customizable writing styles.
 
-- Save hours spent writing posts
-- Overcome writer's block
-- Maintain posting consistency
-- Generate content instantly
-- Experiment with multiple writing styles
-- Improve engagement through AI-generated content
+---
 
-Whether you're a student, developer, founder, creator, or marketer, PostCraft AI helps you create better content faster.
+## 🎯 Why PostCraft-AI?
+
+Creating engaging LinkedIn content consistently can be difficult.
+
+PostCraft-AI helps you:
+
+- ✨ Overcome writer's block
+- ⏳ Save hours of content creation time
+- 🎯 Target specific audiences effectively
+- 📈 Improve engagement with structured copywriting frameworks
+- 🧠 Generate professional content instantly
+- 🔄 Experiment with different writing styles and tones
+
+Whether you're a student, developer, founder, recruiter, marketer, or entrepreneur, PostCraft-AI helps transform ideas into compelling LinkedIn content.
 
 ---
 
 ## ✨ Features
 
-### 🤖 AI-Powered Content Generation
+### 📝 Smart Post Generation
 
-Generate complete LinkedIn posts from a simple idea or topic.
+Generate engaging LinkedIn posts on any topic using Google Gemini AI.
 
-### 🎭 Multiple Writing Styles
+### 🎭 Multiple Writing Tones
 
-Create content in different tones and formats.
+Choose from:
 
 - Professional
+- Inspirational
+- Humorous
+- Funny
+- Angry
+- Sad
+
+### 🎯 Audience Targeting
+
+Customize content for specific audiences such as:
+
+- Developers
+- Founders
+- Students
+- Recruiters
+- Marketers
+- Entrepreneurs
+
+### 📚 Copywriting Frameworks
+
+Supports:
+
+- AIDA (Attention, Interest, Desire, Action)
+- PAS (Problem, Agitate, Solution)
 - Storytelling
-- Thought Leadership
-- Casual
-- Educational
+- Listicle
+- How-To / Tips
+- Custom Style
 
-### ⚡ Fast Generation
+### 📏 Flexible Post Lengths
 
-Receive high-quality content within seconds.
+- Short (100–150 words)
+- Medium (200–300 words)
+- Long (400–500 words)
 
-### 🎯 Engagement-Oriented Writing
+### 🎨 Modern Streamlit UI
 
-Generate posts designed for readability and audience engagement.
-
-### 📋 One-Click Copy
-
-Quickly copy generated content and publish it on LinkedIn.
-
-### 📱 Responsive Design
-
-Optimized for desktop, tablet, and mobile devices.
+- Responsive layout
+- Session history
+- Download generated posts
+- One-click regeneration
+- User-friendly interface
 
 ---
 
-## 🛠 Tech Stack
-
-| Category | Technology |
-|-----------|------------|
-| Frontend | Next.js |
-| Language | TypeScript |
-| Styling | Tailwind CSS |
-| AI Model | Google Gemini |
-| UI Components | Shadcn/UI |
-| Deployment | Vercel |
-
----
-
-## 🏗 Architecture
+## 🏗️ Architecture
 
 ```mermaid
 graph TD
 
-A[User] --> B[Next.js Frontend]
-B --> C[API Route]
-C --> D[Gemini API]
-D --> C
-C --> B
-B --> A
+A[User Input]
+--> B[Streamlit UI]
+
+B --> C[Prompt Builder]
+
+C --> D[Google Gemini AI]
+
+D --> E[Generated LinkedIn Post]
+
+E --> B
 ```
 
-### Workflow
+---
 
-1. User enters a topic or idea
-2. Frontend sends request to API
-3. Gemini processes prompt
-4. AI generates LinkedIn content
-5. Response displayed instantly
+## 🧠 How It Works
+
+1. User enters a topic.
+2. Selects tone, audience, framework, and length.
+3. Prompt Builder creates a structured prompt.
+4. Gemini AI processes the request.
+5. A LinkedIn-ready post is generated.
+6. Streamlit displays the result.
+7. User can copy, regenerate, or download the content.
 
 ---
 
 ## 📂 Project Structure
 
-```bash
+```text
 PostCraft-AI/
 │
-├── src/
-│   ├── app/
-│   ├── components/
-│   ├── lib/
-│   ├── services/
-│   └── types/
+├── app.py                # Streamlit UI
+├── main.py               # CLI Entry Point
+├── config.py             # Gemini Configuration
+├── prompt_builder.py     # Prompt Engineering Logic
+├── user_inputs.py        # Input Collection
 │
-├── public/
-├── docs/
-├── package.json
-└── README.md
+├── requirements.txt
+├── .gitignore
+├── README.md
+└── .env
 ```
 
 ---
 
-## ⚡ Quick Start
+## ⚙️ Installation
 
-### Clone Repository
+### 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/priyam-10/PostCraft-AI.git
-```
 
-### Navigate to Project
-
-```bash
 cd PostCraft-AI
 ```
 
-### Install Dependencies
+### 2️⃣ Create Virtual Environment
 
 ```bash
-npm install
+python -m venv venv
 ```
 
-### Start Development Server
+Activate:
+
+#### Windows
 
 ```bash
-npm run dev
+venv\Scripts\activate
+```
+
+#### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🔑 Setup Gemini API
+
+Create a `.env` file in the project root:
+
+```env
+GEMINI_API_KEY=YOUR_API_KEY_HERE
+```
+
+Get your API key from:
+
+https://aistudio.google.com/
+
+---
+
+## ▶️ Run Application
+
+### Streamlit App
+
+```bash
+streamlit run app.py
 ```
 
 Open:
 
 ```text
-http://localhost:3000
+http://localhost:8501
 ```
 
 ---
 
-## 🔐 Environment Variables
+### CLI Version
 
-Create a `.env.local` file in the project root.
-
-```env
-GEMINI_API_KEY=your_gemini_api_key
+```bash
+python main.py
 ```
-
-Get your API key from Google AI Studio.
-
----
-
-## 📖 Usage
-
-### Step 1
-
-Enter a topic or idea.
-
-Example:
-
-```text
-How AI is changing software development
-```
-
-### Step 2
-
-Select your preferred writing style.
-
-### Step 3
-
-Click **Generate Post**.
-
-### Step 4
-
-Review and copy the generated content.
-
-### Step 5
-
-Publish directly on LinkedIn.
 
 ---
 
@@ -218,39 +228,71 @@ Benefits of Open Source Contributions
 ```text
 Most developers underestimate the impact of open-source contributions.
 
-A single pull request can:
+A single contribution can:
 
-• Improve your coding skills
+• Improve coding skills
 • Expand your network
 • Strengthen your portfolio
 • Help thousands of users
 
-The best time to start contributing was yesterday.
-The second-best time is today.
+The best way to grow as a developer isn't just consuming content.
 
-What's stopping you from making your first contribution?
+It's building in public and contributing consistently.
+
+Have you made your first open-source contribution yet?
 ```
 
 ---
 
-## 🗺 Roadmap
+## 🛠️ Tech Stack
 
-### Current
+| Technology | Usage |
+|------------|--------|
+| Python | Backend Logic |
+| Streamlit | User Interface |
+| Google Gemini AI | Content Generation |
+| dotenv | Environment Variables |
+| Git & GitHub | Version Control |
 
-- [x] AI Post Generation
-- [x] Responsive UI
-- [x] Gemini Integration
-- [x] Multiple Writing Styles
+---
 
-### Upcoming
+## 📈 Future Improvements
 
-- [ ] Post Templates
-- [ ] Content History
-- [ ] Saved Drafts
-- [ ] LinkedIn Publishing Integration
-- [ ] Analytics Suggestions
-- [ ] Carousel Post Generation
-- [ ] Hashtag Recommendations
+### Planned Features
+
+- [ ] LinkedIn carousel generation
+- [ ] Multi-language support
+- [ ] Content scheduling
+- [ ] Hashtag optimization
+- [ ] Post analytics
+- [ ] Export to PDF
+- [ ] User authentication
+- [ ] Content history
+- [ ] AI-powered content suggestions
+
+---
+
+## ❓ FAQ
+
+### Which AI model powers PostCraft-AI?
+
+Google Gemini AI.
+
+### Is my data stored?
+
+No. The application generates content on demand and does not permanently store prompts or generated posts.
+
+### Can I customize the writing style?
+
+Yes. You can choose different tones, audiences, frameworks, and post lengths.
+
+### Is PostCraft-AI free to use?
+
+Yes, subject to Google Gemini API usage limits.
+
+### Can I use generated content commercially?
+
+Yes. Generated content can be used for personal, professional, and commercial purposes.
 
 ---
 
@@ -261,19 +303,20 @@ Contributions are welcome and appreciated.
 ### Steps
 
 1. Fork the repository
-2. Create a new branch
+
+2. Create a feature branch
 
 ```bash
 git checkout -b feature/amazing-feature
 ```
 
-3. Commit changes
+3. Commit your changes
 
 ```bash
 git commit -m "Add amazing feature"
 ```
 
-4. Push branch
+4. Push the branch
 
 ```bash
 git push origin feature/amazing-feature
@@ -283,35 +326,24 @@ git push origin feature/amazing-feature
 
 ---
 
-## ❓ FAQ
+## 👨‍💻 Author
 
-### Which AI model powers PostCraft AI?
+**Priyam**
 
-Google Gemini.
-
-### Is user content stored?
-
-No. Content is generated on demand.
-
-### Can I use generated posts commercially?
-
-Yes, generated content can be used for professional and commercial purposes.
-
-### Is PostCraft AI free?
-
-Yes, subject to Gemini API usage limits.
+GitHub: https://github.com/priyam-10
 
 ---
 
-## 🌟 Support
+## ⭐ Support
 
-If you find this project useful:
+If you found this project useful:
 
-⭐ Star the repository
+- ⭐ Star the repository
+- 🍴 Fork the repository
+- 🐛 Report issues
+- 💡 Suggest improvements
 
-🍴 Fork the project
-
-📢 Share it with others
+Your support helps improve the project and motivates future development.
 
 ---
 
@@ -320,3 +352,9 @@ If you find this project useful:
 This project is licensed under the MIT License.
 
 See the LICENSE file for more information.
+
+---
+
+<p align="center">
+Made with ❤️ using Python, Streamlit, and Google Gemini AI
+</p>
