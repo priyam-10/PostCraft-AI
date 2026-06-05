@@ -17,6 +17,14 @@ The application helps creators, professionals, founders, marketers, recruiters, 
 
 ---
 
+## Live Demo
+
+🚀 Try the application here:
+
+🔗 [PostCraft AI Studio](https://postcraft-ai-studio.streamlit.app/)
+
+---
+
 ## 🎯 Why PostCraft-AI?
 
 Creating engaging LinkedIn content consistently can be difficult.
